@@ -58,7 +58,7 @@
 </main>
 
 <aside>
-	<h2>Unsere Geschichte:</h2>
+<h2>Unsere Geschichte:</h2>
 	<p>Die Anfänge unserer Firma reichen bis ins Mittelalter zurück, als Horst Holzmann begann, seine
 	bisher für den Eigenbedarf hergestellten Möbel auch auf dem Markt der nächsten Stadt zu verkaufen.</p>
     
@@ -69,4 +69,18 @@
 <footer> <a href="kontakt.html">Kontakt und Impressum</a>
 	<p>© 2023 Schneiderei-Meier.de</p>
 </footer>
+	<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 </html>
